@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://images.pexels.com/photos/18364792/pexels-photo-18364792/free-photo-of-star-trails-over-the-desert.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+  <title>Excel Data Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="loadingFeedback" class="hidden">
+    <p>Loading...</p>
+  </div>
+
+  <div id="downloadFeedback" class="hidden">
+    <p>File Downloaded!</p>
+  </div>
+
+  <form id="uploadForm" enctype="multipart/form-data">
+    <label for="fileInput">Upload Excel Sheet:</label>
+    <input type="file" id="fileInput" name="file">
+    <button type="submit">Upload</button>
+  </form>
+
+  <button id="fetchDataButton">Fetch Data</button>
+
+  <table id="dataTable">
+    <!-- Table will be populated dynamically -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
